@@ -1,0 +1,19 @@
+Archivos de video: 2367 | etiquetados: 2260 | sin etiqueta: 107 | etiquetas sin video: 0
+Solapes entre particiones: 0, 0, 0
+train: n=1582 | clase1=407 (25.7%)
+val: n=339 | clase1=83 (24.5%)
+test: n=339 | clase1=86 (25.4%)
+Total: clase0=1684 | clase1=576
+FPS distintos: [np.float64(30.0)]
+Resoluciones (ancho x alto): {'480x480': 1121, '480x600': 900, '480x270': 206, '480x852': 5, '480x268': 3, '480x598': 2, '480x360': 2, '480x272': 2, '480x304': 1, '480x542': 1, '480x320': 1, '480x274': 1, '480x250': 1, '480x498': 1, '480x528': 1, '480x574': 1, '480x526': 1, '480x594': 1, '864x486': 1, '480x384': 1, '480x588': 1, '480x476': 1, '480x280': 1, '480x264': 1, '480x522': 1, '480x314': 1, '480x560': 1}
+Fotogramas percentiles {0: np.float64(22.0), 10: np.float64(60.0), 25: np.float64(78.0), 50: np.float64(109.0), 75: np.float64(165.0), 90: np.float64(238.1), 100: np.float64(769.0)}
+Duración (s) percentiles {0: np.float64(0.73), 10: np.float64(2.0), 25: np.float64(2.6), 50: np.float64(3.63), 75: np.float64(5.5), 90: np.float64(7.94), 100: np.float64(25.63)} | media 4.44
+Mediana duración clase0=3.63s | clase1=3.63s
+p90 fotogramas (train): 243.9
+Positivos con 1 / 2+ intervalos: 167 / 409
+Intervalos que exceden la duración del video (+0.1 s): 0
+Positivos con inicio de error <= 0% del video: 65.5%
+Positivos con inicio de error <= 25% del video: 72.7%
+Positivos con inicio de error <= 50% del video: 80.4%
+Positivos con inicio de error <= 75% del video: 86.6%
+Positivos con inicio de error <= 100% del video: 100.0%

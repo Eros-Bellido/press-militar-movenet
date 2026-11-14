@@ -1,0 +1,14 @@
+Modelo: models\movenet_thunder_fp16.tflite | SHA256 41641538679ec79b07d4101e591dda47d098c09af29607674b2a40b8a3798dd3
+Entrada: (np.int32(1), np.int32(256), np.int32(256), np.int32(3)) uint8 | runtime tf.lite | TF 2.21.0 | OpenCV 5.0.0 | hilos 4 | Intel64 Family 6 Model 154 Stepping 3, GenuineIntel
+Videos procesados: 2260 | sin fotogramas: 0
+Fotogramas procesados: 301103
+Diferencia leídos - frames.csv: igual en 2260 videos | min 0 | max 0
+hombro_izq: confianza media 0.697 | fotogramas < 0.2: 0.4%
+hombro_der: confianza media 0.696 | fotogramas < 0.2: 0.4%
+codo_izq: confianza media 0.533 | fotogramas < 0.2: 10.9%
+codo_der: confianza media 0.546 | fotogramas < 0.2: 8.9%
+muneca_izq: confianza media 0.444 | fotogramas < 0.2: 20.6%
+muneca_der: confianza media 0.474 | fotogramas < 0.2: 19.1%
+cadera_izq: confianza media 0.699 | fotogramas < 0.2: 1.0%
+cadera_der: confianza media 0.696 | fotogramas < 0.2: 0.9%
+Tiempo de esta corrida: 65.1 min | 13.0 ms/fotograma (incluye lectura y preprocesamiento; NO comparable con la medición en Android)

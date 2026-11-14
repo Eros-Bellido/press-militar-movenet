@@ -1,0 +1,26 @@
+Videos: 2260 | fotogramas: 301103 | umbral de confianza 0.2
+Secuencias: 20 continuas + 6 máscaras = 26 por fotograma | longitud min 22 | mediana 109 | max 769
+Agregadas: 146 características por video | fracciones [0.25, 0.5, 0.75, 1.0]
+Rango ángulos (todo el conjunto): 0.0 a 180.0 grados
+Fotogramas sin dato aún (NaN antes del primer punto válido), por característica:
+  ang_codo_izq: 2.31%
+  ang_codo_der: 1.94%
+  ang_hombro_izq: 0.68%
+  ang_hombro_der: 0.61%
+  x_hombro_izq: 0.26%
+  y_hombro_izq: 0.26%
+  x_hombro_der: 0.26%
+  y_hombro_der: 0.26%
+  x_codo_izq: 0.79%
+  y_codo_izq: 0.79%
+  x_codo_der: 0.64%
+  y_codo_der: 0.64%
+  x_muneca_izq: 2.12%
+  y_muneca_izq: 2.12%
+  x_muneca_der: 1.84%
+  y_muneca_der: 1.84%
+  vel_codo_izq: 2.31%
+  vel_codo_der: 1.94%
+  vel_hombro_izq: 0.68%
+  vel_hombro_der: 0.61%
+Videos con alguna característica sin dato en todo el video: 3

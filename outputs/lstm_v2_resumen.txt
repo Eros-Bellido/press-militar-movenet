@@ -1,0 +1,14 @@
+LSTM v2 | TensorFlow 2.21.0 | Keras 3.15.1
+Cambios: supervisión por fotograma (peso 1.0), espejo (p=0.5), ensamble de 5 semillas
+Hiperparámetros (los mismos de la ronda 1): {"lr": 0.00021, "dropout": 0.04918, "peso_pos": 1.0053, "unidades": 64, "capas": 2}
+Videos positivos sin ningún fotograma marcado por los intervalos: 0 de 576
+Fotogramas con error (positivos): 33.9% en promedio
+Épocas por semilla: [38, 30, 15, 16, 26] | umbral por semilla: [0.24, 0.25, 0.24, 0.22, 0.24] | umbral del ensamble: 0.26
+F1 clase incorrecta en VALIDACIÓN:
+  fracción | ronda 1 (media ± DE) | v2 (media ± DE) | v2 ensamble
+   25 %    | 0.4911 ± 0.0159   | 0.4629 ± 0.0203 | 0.4933
+   50 %    | 0.4531 ± 0.0297   | 0.4343 ± 0.0243 | 0.4513
+   75 %    | 0.4616 ± 0.0198   | 0.4481 ± 0.0165 | 0.4596
+  100 %    | 0.4837 ± 0.0249   | 0.4633 ± 0.0113 | 0.4706
+  PROMEDIO | 0.4724            | 0.4522          | 0.4687
+Tiempo de esta corrida: 8.6 min

@@ -1,0 +1,14 @@
+Transformer v2 | TensorFlow 2.21.0 | Keras 3.15.1
+Cambios: supervisión por fotograma (peso 1.0), espejo (p=0.5), ensamble de 5 semillas
+Hiperparámetros (los mismos de la ronda 1): {"lr": 0.00025, "dropout": 0.3529, "peso_pos": 1.0208, "d_model": 32, "cabezas": 4, "capas": 1}
+Videos positivos sin ningún fotograma marcado por los intervalos: 0 de 576
+Fotogramas con error (positivos): 33.9% en promedio
+Épocas por semilla: [37, 43, 22, 14, 31] | umbral por semilla: [0.21, 0.27, 0.2, 0.27, 0.23] | umbral del ensamble: 0.25
+F1 clase incorrecta en VALIDACIÓN:
+  fracción | ronda 1 (media ± DE) | v2 (media ± DE) | v2 ensamble
+   25 %    | 0.4642 ± 0.0418   | 0.4378 ± 0.0183 | 0.4576
+   50 %    | 0.4433 ± 0.0457   | 0.4331 ± 0.0231 | 0.4541
+   75 %    | 0.4226 ± 0.0243   | 0.4185 ± 0.0244 | 0.4292
+  100 %    | 0.4695 ± 0.0205   | 0.4425 ± 0.0362 | 0.4538
+  PROMEDIO | 0.4499            | 0.4330          | 0.4487
+Tiempo de esta corrida: 5.4 min

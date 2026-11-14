@@ -1,0 +1,27 @@
+Conjunto de prueba: 339 videos | semillas [np.int64(0), np.int64(1), np.int64(2), np.int64(3), np.int64(4)] | umbrales de validación
+F1 medio en VALIDACIÓN (criterio de selección): LSTM 0.4724, LightGBM 0.5138, TCN 0.4577, Transformer 0.4499
+Mejor modelo secuencial (validación): LSTM
+
+PRUEBA – media ± DE (5 semillas):
+  LightGBM     25 %: F1 0.4803 ± 0.0284 | P 0.4214 | R 0.5698 | PR-AUC 0.4111 ± 0.0098 | Exact. 0.6885
+  LightGBM     50 %: F1 0.4426 ± 0.0244 | P 0.3935 | R 0.5116 | PR-AUC 0.3901 ± 0.0073 | Exact. 0.6749
+  LightGBM     75 %: F1 0.4268 ± 0.0262 | P 0.4056 | R 0.4605 | PR-AUC 0.4001 ± 0.0076 | Exact. 0.6885
+  LightGBM    100 %: F1 0.3868 ± 0.0435 | P 0.3528 | R 0.4349 | PR-AUC 0.3523 ± 0.0033 | Exact. 0.6549
+  LSTM         25 %: F1 0.4325 ± 0.0224 | P 0.3339 | R 0.6209 | PR-AUC 0.3972 ± 0.0287 | Exact. 0.5882
+  LSTM         50 %: F1 0.4472 ± 0.0245 | P 0.3576 | R 0.6000 | PR-AUC 0.3695 ± 0.0178 | Exact. 0.6248
+  LSTM         75 %: F1 0.4270 ± 0.0147 | P 0.3506 | R 0.5488 | PR-AUC 0.3702 ± 0.0077 | Exact. 0.6260
+  LSTM        100 %: F1 0.4409 ± 0.0149 | P 0.3667 | R 0.5558 | PR-AUC 0.3637 ± 0.0065 | Exact. 0.6431
+  TCN          25 %: F1 0.4193 ± 0.0353 | P 0.3029 | R 0.6930 | PR-AUC 0.3916 ± 0.0070 | Exact. 0.5150
+  TCN          50 %: F1 0.3900 ± 0.0235 | P 0.2860 | R 0.6302 | PR-AUC 0.3294 ± 0.0116 | Exact. 0.5032
+  TCN          75 %: F1 0.4067 ± 0.0277 | P 0.3019 | R 0.6326 | PR-AUC 0.3256 ± 0.0191 | Exact. 0.5363
+  TCN         100 %: F1 0.4368 ± 0.0160 | P 0.3267 | R 0.6674 | PR-AUC 0.3822 ± 0.0047 | Exact. 0.5628
+  Transformer  25 %: F1 0.4511 ± 0.0153 | P 0.3289 | R 0.7279 | PR-AUC 0.4347 ± 0.0270 | Exact. 0.5504
+  Transformer  50 %: F1 0.4617 ± 0.0143 | P 0.3335 | R 0.7651 | PR-AUC 0.4147 ± 0.0087 | Exact. 0.5475
+  Transformer  75 %: F1 0.4626 ± 0.0233 | P 0.3355 | R 0.7628 | PR-AUC 0.4191 ± 0.0250 | Exact. 0.5487
+  Transformer 100 %: F1 0.4741 ± 0.0264 | P 0.3516 | R 0.7349 | PR-AUC 0.3938 ± 0.0282 | Exact. 0.5841
+
+McNemar exacto LSTM vs LightGBM (Holm sobre 4 fracciones, alfa 0.05):
+   25 %: significativo en 3/5 semillas | p_holm mediana 0.0020 | favorece: LightGBM 5
+   50 %: significativo en 1/5 semillas | p_holm mediana 0.1262 | favorece: LightGBM 5
+   75 %: significativo en 2/5 semillas | p_holm mediana 0.2012 | favorece: LightGBM 5
+  100 %: significativo en 0/5 semillas | p_holm mediana 0.6849 | favorece: LSTM 3, LightGBM 2

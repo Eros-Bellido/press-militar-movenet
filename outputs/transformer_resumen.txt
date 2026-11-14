@@ -1,0 +1,12 @@
+transformer | TensorFlow 2.21.0 | Keras 3.15.1 | Optuna 5.0.0
+Datos: 1582 train, 339 val, 339 test | 26 entradas por fotograma
+Optuna: 30 intentos, TPE semilla 42, MedianPruner | estados {'PRUNED': 17, 'COMPLETE': 13} | mejor objetivo (F1 medio val) 0.4951
+Mejores hiperparámetros: {"lr": 0.00025, "dropout": 0.3529, "peso_pos": 1.0208, "d_model": 32, "cabezas": 4, "capas": 1}
+Fijos: lote 32, máx. 60 épocas, parada temprana paciencia 8 (val_loss), Adam, pérdida BCE ponderada en 4 puntos | parámetros del modelo: 42209
+Épocas (mejor) por semilla: [40, 29, 28, 25, 14] | umbral por semilla: [0.25, 0.22, 0.19, 0.21, 0.19]
+F1 clase incorrecta en VALIDACIÓN (media ± DE, 5 semillas):
+  25 %: 0.4642 ± 0.0418
+  50 %: 0.4433 ± 0.0457
+  75 %: 0.4226 ± 0.0243
+  100 %: 0.4695 ± 0.0205
+Tiempo de esta corrida: 40.5 min

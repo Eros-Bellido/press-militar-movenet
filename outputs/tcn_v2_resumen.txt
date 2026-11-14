@@ -1,0 +1,14 @@
+TCN v2 | TensorFlow 2.21.0 | Keras 3.15.1
+Cambios: supervisión por fotograma (peso 1.0), espejo (p=0.5), ensamble de 5 semillas
+Hiperparámetros (los mismos de la ronda 1): {"lr": 0.00028, "dropout": 0.2394, "peso_pos": 1.12139, "filtros": 64, "niveles": 4}
+Videos positivos sin ningún fotograma marcado por los intervalos: 0 de 576
+Fotogramas con error (positivos): 33.9% en promedio
+Épocas por semilla: [44, 28, 31, 24, 12] | umbral por semilla: [0.29, 0.25, 0.28, 0.25, 0.24] | umbral del ensamble: 0.25
+F1 clase incorrecta en VALIDACIÓN:
+  fracción | ronda 1 (media ± DE) | v2 (media ± DE) | v2 ensamble
+   25 %    | 0.4521 ± 0.0276   | 0.4721 ± 0.0373 | 0.4688
+   50 %    | 0.4286 ± 0.0172   | 0.4257 ± 0.0182 | 0.4509
+   75 %    | 0.4825 ± 0.0246   | 0.4249 ± 0.0331 | 0.4176
+  100 %    | 0.4676 ± 0.0279   | 0.4579 ± 0.0218 | 0.4591
+  PROMEDIO | 0.4577            | 0.4451          | 0.4491
+Tiempo de esta corrida: 5.4 min

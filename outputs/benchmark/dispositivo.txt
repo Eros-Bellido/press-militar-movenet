@@ -1,0 +1,1 @@
+﻿fecha: 2026-11-08 19:17 modelo: SM-A325F plataforma: mt6768 android: 13 abi: arm64-v8a nucleos: 0-7 bateria:   level: 100 hilos: 4 | repeticiones: 3 | pausa: 60 s | delegado: XNNPACK (CPU) benchmark_model: 6.84 MB descargado de https://storage.googleapis.com/tensorflow-nightly-public/prod/tensorflow/release/lite/tools/nightly/latest/android_aarch64_benchmark_model

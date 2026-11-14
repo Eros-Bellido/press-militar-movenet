@@ -1,0 +1,13 @@
+TensorFlow 2.21.0
+F1 medio de validación por semilla (LSTM): s0 0.4946, s1 0.4535, s2 0.4749, s3 0.4650, s4 0.4739
+Semilla elegida: 0 | umbral 0.22 | 2 capas LSTM de 64 unidades | 26 entradas
+Modelo paso a paso -> outputs\movil\lstm_paso.tflite | 227.0 KB | solo operaciones nativas de TFLite (FP32)
+Entradas TFLite: serving_default_x:0 [np.int32(1), np.int32(26)]; serving_default_estado:0 [np.int32(4), np.int32(64)]
+Diferencia máxima de probabilidad Keras vs TFLite (prueba, todos los fotogramas): 4.17e-07
+Predicciones que cambian de clase con el umbral: 0 de 1356
+F1 de PRUEBA, semilla elegida (Keras -> TFLite):
+  25 %: 0.4444 -> 0.4444
+  50 %: 0.4690 -> 0.4690
+  75 %: 0.4190 -> 0.4190
+  100 %: 0.4550 -> 0.4550
+MoveNet Thunder FP16 -> outputs\movil\movenet_thunder_fp16.tflite | 12.00 MB
